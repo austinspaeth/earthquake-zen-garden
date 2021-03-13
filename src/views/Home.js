@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react';
 
 // COMPONENTS //
-import Table from '../components/Table';
+import HomeTable from '../components/HomeTable';
 
 const Home = (props) => {
 
     return (
         <section>
             <h2>{props.data?.data.metadata.title}</h2>
-            <Table data={props.data} />
+            <HomeTable data={props.data} />
         </section>
     )
 }
