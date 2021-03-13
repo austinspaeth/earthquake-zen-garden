@@ -12,6 +12,7 @@ body{
 	overflow-x:hidden;
 	font-family:sans-serif;
 	background:#ffffff;
+    color:#444444;
 }
 
 .appContainer{ 
@@ -59,4 +60,32 @@ a {
 
 a:visited{
     color:#6600cc;
+}
+
+section h2 {
+    font-size:18px;
+    text-align:center;
+    color:#444444;
+    margin-top:20px;
+    margin-bottom:0px;
+}
+
+table{
+    margin-top:25px;
+}
+
+table thead td {
+    text-align:center;
+    padding-bottom:6px;
+    outline:0;
+    cursor:pointer;
+    padding: 0px 10px;
+}
+
+table tbody td {
+    padding:2px 0px;
+}
+
+table tbody td:nth-child(2){
+    text-align:center;
 }
