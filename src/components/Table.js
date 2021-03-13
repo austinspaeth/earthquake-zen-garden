@@ -5,7 +5,7 @@ const Table = (props) => {
     if(props.rowMapping){
         return (
             <table className={'detailsTable'}>
-                <tbody>
+                <tbody className={props.fullWidth && 'fullWidth'}>
                     {props.rowMapping.map((details) =>
                         <tr key={details.label}>
                             <td className={'label'}>{details.label}</td>
