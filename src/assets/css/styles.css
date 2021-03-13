@@ -67,15 +67,11 @@ section h2 {
     text-align:center;
     color:#444444;
     margin-top:20px;
-    margin-bottom:0px;
+    margin-bottom:25px;
 }
 
 .leftAlign{
     text-align:left;
-}
-
-table{
-    margin-top:25px;
 }
 
 table thead td {
@@ -88,6 +84,7 @@ table thead td {
 
 table tbody td {
     padding:2px 0px;
+    vertical-align:top;
 }
 
 table tbody td:nth-child(2){
@@ -104,4 +101,16 @@ table tbody td:nth-child(2){
     color:#777777;
     font-weight:600;
     text-align:left!important;
+    max-width:225px;
+}
+
+.flexRow{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.avatar {
+    max-width:150px;
+    margin-right:10px;
 }

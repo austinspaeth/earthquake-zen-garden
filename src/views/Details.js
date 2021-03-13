@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
 // COMPONENTS //
+import Table from '../components/Table';
 import { withRouter } from 'react-router';
 
 const Details = (props) => {
@@ -46,17 +47,7 @@ const Details = (props) => {
         return (
             <section>
                 <h2 className={'leftAlign'}>{earthquake?.properties.title}</h2>
-                <table className={'detailsTable'}>
-                    <tbody>
-                        {rowMapping.map((details) =>
-                            <tr key={details.label}>
-                                <td className={'label'}>{details.label}</td>
-                                <td className={'value'}>{details.value}</td>
-                            </tr>
-                        )}
-                    </tbody>
-                </table>
-
+                <Table rowMapping={rowMapping} />
             </section>
         )
     } else {

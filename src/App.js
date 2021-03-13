@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 // VIEWS //
 import Home from './views/Home';
 import Details from './views/Details';
+import Profile from './views/Profile';
 
 // COMPONENTS //
 import Header from './components/Header';
@@ -13,7 +14,6 @@ import { data } from './assets/data/data';
 // STYLES //
 import './assets/css/styles.css';
 
-
 const App = (props) => {
 
     switch(props.view){
@@ -21,6 +21,7 @@ const App = (props) => {
             return (
                 <div className={'appContainer'}>
                     <Header data={data} />
+                    <Profile data={data} />
                 </div>
             )
         case 'details':
