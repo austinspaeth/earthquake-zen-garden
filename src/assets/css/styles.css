@@ -78,11 +78,13 @@ table thead td {
     text-align:center;
     padding-bottom:6px;
     outline:0;
+    font-weight:600;
     cursor:pointer;
     padding: 0px 10px;
 }
 
 table tbody td {
+    font-weight:600;
     padding:2px 0px;
     vertical-align:top;
 }
