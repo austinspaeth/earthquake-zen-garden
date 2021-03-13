@@ -1,0 +1,23 @@
+html{
+	padding:0px;
+	margin:0px;
+	overflow-x:hidden;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+}
+
+body{
+	padding:0px;
+	margin:0px;
+	overflow-x:hidden;
+	font-family:'sans-serif';
+	background:#ffffff;
+}
+
+.appContainer{ 
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    align-items:center;
+    justify-content:flex-start;
+}
