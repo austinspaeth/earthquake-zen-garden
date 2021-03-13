@@ -104,6 +104,10 @@ table tbody td:nth-child(2){
     max-width:225px;
 }
 
+.fullWidth .value{
+    max-width:initial;
+}
+
 .flexRow{
     display:flex;
     justify-content:center;

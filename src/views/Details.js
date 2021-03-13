@@ -47,7 +47,7 @@ const Details = (props) => {
         return (
             <section>
                 <h2 className={'leftAlign'}>{earthquake?.properties.title}</h2>
-                <Table rowMapping={rowMapping} />
+                <Table fullWidth={true} rowMapping={rowMapping} />
             </section>
         )
     } else {
