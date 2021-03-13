@@ -70,6 +70,10 @@ section h2 {
     margin-bottom:0px;
 }
 
+.leftAlign{
+    text-align:left;
+}
+
 table{
     margin-top:25px;
 }
@@ -88,4 +92,16 @@ table tbody td {
 
 table tbody td:nth-child(2){
     text-align:center;
+}
+
+.detailsTable .label{
+    padding-right:30px;
+    font-weight:600;
+    color:#444444;
+}
+
+.detailsTable .value{
+    color:#777777;
+    font-weight:600;
+    text-align:left!important;
 }

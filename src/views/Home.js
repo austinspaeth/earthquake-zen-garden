@@ -6,7 +6,7 @@ import Table from '../components/Table';
 const Home = (props) => {
 
     return (
-        <section className={'view'}>
+        <section>
             <h2>{props.data?.data.metadata.title}</h2>
             <Table data={props.data} />
         </section>
