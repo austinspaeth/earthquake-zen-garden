@@ -1,0 +1,120 @@
+html{
+	padding:0px;
+	margin:0px;
+	overflow-x:hidden;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+}
+
+body{
+	padding:0px;
+	margin:0px;
+	overflow-x:hidden;
+	font-family:sans-serif;
+	background:#ffffff;
+    color:#444444;
+}
+
+.appContainer{ 
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    align-items:center;
+    justify-content:flex-start;
+}
+
+header{
+    width:100%;
+    height:80px;
+    background:#ededed;
+    box-sizing:border-box;
+    padding:0px 15px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+}
+
+header h1{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    position:absolute;
+    pointer-events:none;
+    color:#777777;
+    font-size:32px;
+    margin:0px;
+}
+
+header img{
+    height:40
+}
+
+a {
+    color:#0011bb;
+    font-weight: 600;
+}
+
+a:visited{
+    color:#6600cc;
+}
+
+section h2 {
+    font-size:18px;
+    text-align:center;
+    color:#444444;
+    margin-top:20px;
+    margin-bottom:25px;
+}
+
+.leftAlign{
+    text-align:left;
+}
+
+table thead td {
+    text-align:center;
+    padding-bottom:6px;
+    outline:0;
+    cursor:pointer;
+    padding: 0px 10px;
+}
+
+table tbody td {
+    padding:2px 0px;
+    vertical-align:top;
+}
+
+table tbody td:nth-child(2){
+    text-align:center;
+}
+
+.detailsTable .label{
+    padding-right:30px;
+    font-weight:600;
+    color:#444444;
+}
+
+.detailsTable .value{
+    color:#777777;
+    font-weight:600;
+    text-align:left!important;
+    max-width:225px;
+}
+
+.fullWidth .value{
+    max-width:initial;
+}
+
+.flexRow{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.avatar {
+    max-width:150px;
+    margin-right:10px;
+}
