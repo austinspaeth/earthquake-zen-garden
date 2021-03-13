@@ -5,12 +5,15 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 // COMPONENTS //
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Redirect, Route, Switch } from 'react-router-dom';
 
 ReactDOM.render(
     <HashRouter>
         <Switch>
-            <Route path="/" render={() => (<App view={'app'} />) } />
+            <Route path="/profile" exact render={() => (<App view={'profile'} />) } />
+            <Route path="/details/:id" exact render={(route) => (<App earthquake={route.match.params.id} view={'details'} />) } />
+            <Route path="/home" exact render={() => (<App view={'home'} />) } />
+            <Redirect to={'/home'} />
         </Switch>
     </HashRouter>,
 	document.getElementById('app')
