@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 
 // VIEWS //
 import Home from './views/Home';
+import Details from './views/Details';
 
 // COMPONENTS //
 import Header from './components/Header';
@@ -26,6 +27,7 @@ const App = (props) => {
             return (
                 <div className={'appContainer'}>
                     <Header data={data} />
+                    <Details data={data} earthquake={props.earthquake} />
                 </div>
             )
         default:
