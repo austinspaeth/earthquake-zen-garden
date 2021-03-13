@@ -76,11 +76,12 @@ section h2 {
 
 table thead td {
     text-align:center;
-    padding-bottom:6px;
+    font-size:14px;
     outline:0;
     font-weight:600;
     cursor:pointer;
     padding: 0px 10px;
+    padding-bottom:5px;
 }
 
 table tbody td {
