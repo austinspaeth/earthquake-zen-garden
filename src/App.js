@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
 // VIEWS //
-
+import Home from './views/Home';
 
 // COMPONENTS //
 import Header from './components/Header';
@@ -32,6 +32,7 @@ const App = (props) => {
             return (
                 <div className={'appContainer'}>
                     <Header data={data} />
+                    <Home data={data} />
                 </div>
             );
     }
