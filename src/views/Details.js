@@ -4,7 +4,7 @@ import React, {useState, useEffect} from 'react';
 import Table from '../components/Table';
 import { withRouter } from 'react-router';
 
-const Details = (props) => {
+export const Details = (props) => {
 
     const [earthquake, setEarthquake] = useState(null);
 
@@ -45,7 +45,7 @@ const Details = (props) => {
 
     if(earthquake){
         return (
-            <section>
+            <section data-testid={'detailsView'}>
                 <h2 className={'leftAlign'}>{earthquake?.properties.title}</h2>
                 <Table fullWidth={true} rowMapping={rowMapping} />
             </section>

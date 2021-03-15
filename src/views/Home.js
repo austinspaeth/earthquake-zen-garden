@@ -1,12 +1,12 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 // COMPONENTS //
 import HomeTable from '../components/HomeTable';
 
-const Home = (props) => {
+export const Home = (props) => {
 
     return (
-        <section>
+        <section data-testid={'homeView'}>
             <h2>{props.data?.data.metadata.title}</h2>
             <HomeTable data={props.data} />
         </section>

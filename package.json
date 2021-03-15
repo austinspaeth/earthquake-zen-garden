@@ -18,7 +18,7 @@
 		"@babel/preset-react": "^7.12.1",
 		"@testing-library/dom": "^7.28.0",
 		"@testing-library/jest-dom": "^5.11.6",
-		"@testing-library/react": "^11.2.1",
+		"@testing-library/react": "^11.2.5",
 		"@webpack-cli/serve": "^1.1.0",
 		"babel-loader": "^8.0.4",
 		"copy-webpack-plugin": "^6.3.2",
@@ -26,13 +26,17 @@
 		"file-loader": "^6.2.0",
 		"html-webpack-plugin": "^5.0.0-alpha.4",
 		"image-webpack-loader": "^7.0.1",
-		"jest": "^26.6.3",
+		"jest": "26.0.0",
 		"react-test-renderer": "^17.0.1",
 		"style-loader": "^2.0.0",
 		"url-loader": "^4.1.1",
 		"webpack": "^5.9.0",
 		"webpack-cli": "^4.2.0",
-		"webpack-dev-server": "^3.11.0"
+		"webpack-dev-server": "^3.11.0",
+		"@babel/plugin-transform-react-jsx": "^7.12.17",
+		"@babel/preset-env": "^7.13.10",
+		"regenerator-runtime": "^0.13.7",
+		"@babel/plugin-transform-modules-commonjs": "^7.13.8"
 	},
 	"dependencies": {
 		"browserify": "^17.0.0",
@@ -46,7 +50,10 @@
 			"js",
 			"jsx"
 		],
-		"testRegex": "/__test__/.*\\.(js|jsx)$"
+		"testRegex": "/__test__/.*\\.(js|jsx)$",
+        "moduleNameMapper":{
+            "\\.(css|less|sass|scss)$": "./__mocks__/cssMock.js"
+       }
 	},
 	"devServer": {
 		"historyApiFallback": true,
