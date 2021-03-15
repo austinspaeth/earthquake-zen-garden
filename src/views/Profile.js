@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 // COMPONENTS //
 import Table from '../components/Table';
 
-const Profile = (props) => {
+export const Profile = (props) => {
 
     const profileObject = props.data?.profile;
 
@@ -32,7 +32,7 @@ const Profile = (props) => {
 
     if(props.data){
         return (
-            <section>
+            <section data-testid={'profileView'}>
                  <h2>Profile</h2>
                  <div className={'flexRow'}>
                      <img className={'avatar'} src={profileObject.avatarImage} alt={profileObject.firstName + ' ' + profileObject.lastName} title={profileObject.firstName + ' ' + profileObject.lastName} />

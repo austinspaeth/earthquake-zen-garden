@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 // COMPONENTS //
 import { Link } from 'react-router-dom';
 
-const HomeTable = (props) => {
+export const HomeTable = (props) => {
 
     const [sortedData, setSortedData] = useState([]);
     const [sort, setSort] = useState({
@@ -50,15 +50,15 @@ const HomeTable = (props) => {
     }
 
     return (
-        <table cellPadding={0} cellSpacing={0}>
+        <table data-testid={'homeTable'} cellPadding={0} cellSpacing={0}>
             <thead>
                 <tr>
-                    <td tabIndex={1} onKeyDown={(e) => e.key === 'Enter' && sortData('Title')} onClick={() => sortData('Title')}>Title</td>
-                    <td tabIndex={1} onKeyDown={(e) => e.key === 'Enter' && sortData('Magnitude')} onClick={() => sortData('Magnitude')}>Magnitude</td>
-                    <td tabIndex={1} onKeyDown={(e) => e.key === 'Enter' && sortData('Time')} onClick={() => sortData('Time')}>Time</td>
+                    <td data-testid={'titleColumn'} tabIndex={1} onKeyDown={(e) => e.key === 'Enter' && sortData('Title')} onClick={() => sortData('Title')}>Title</td>
+                    <td data-testid={'magnitudeColumn'} tabIndex={1} onKeyDown={(e) => e.key === 'Enter' && sortData('Magnitude')} onClick={() => sortData('Magnitude')}>Magnitude</td>
+                    <td data-testid={'timeColumn'} tabIndex={1} onKeyDown={(e) => e.key === 'Enter' && sortData('Time')} onClick={() => sortData('Time')}>Time</td>
                 </tr>
             </thead>
-            <tbody>
+            <tbody data-testid={'tbody'}>
                 {sortedData.map((earthquake) => 
                     <tr key={earthquake.properties.code}>
                         <td>

@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Table = (props) => {
+export const Table = (props) => {
 
     if(props.rowMapping){
         return (
-            <table className={'detailsTable'}>
+            <table data-testid={'table'} className={'detailsTable'}>
                 <tbody className={props.fullWidth && 'fullWidth'}>
                     {props.rowMapping.map((details) =>
                         <tr key={details.label}>
